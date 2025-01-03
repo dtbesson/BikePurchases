@@ -19,6 +19,8 @@ Each data entry has the following attributes:
 - Region
 - Age
 - Purchased Bike
+
+Dataset before pre-processing:
 ![image](https://github.com/user-attachments/assets/b8c106c9-88ad-4ad4-80ed-8dc4653071be)
 
 
@@ -27,7 +29,9 @@ Each data entry has the following attributes:
 - Highlight and remove duplicates in the ID column using conditional formatting. 26 in total.
 - Change currencies in Income column to numbers without decimal places. Currency formatting sometimes cause problems with graphs.
 - Add an Age Bracket column. Instead of making visualisations using 60+ different values in the Age column, we can use just 3 age 'brackets'.
-- - Switch to PowerBI to create various graphs.
+- Switch to PowerBI to create various graphs.
+
+Dataset after pre-processing:
 ![image](https://github.com/user-attachments/assets/5d6d08bb-8e66-4480-97dc-cd8f0aeec4fb)
 
 
