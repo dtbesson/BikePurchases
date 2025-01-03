@@ -37,10 +37,12 @@ Dataset after pre-processing:
 
 ## Adding 'Order' Columns:
 After creating some visualisations, a problem arose. The entries in the Commute Distance and Age Bracket columns are considered strings. Therefore, when creating visualisations using them, they were appearing in an incorrect order:
-![image](https://prod-files-secure.s3.us-west-2.amazonaws.com/0cf2143b-007e-4d2f-91da-9db35b0507e0/f4619f5d-a03a-42f1-aec0-c8fb3c3e4651/image.png)
+![image](https://github.com/user-attachments/assets/2dc8ed68-fbda-4dec-ad5f-378f3ec86369)
 
-One way to fix this is to return to Excel and create new columns called Commute Distance Order and Age Bracket Order, which have integer values corresponding to the order in which we want the values to appear. e.g. for entries with "0-1 Miles" in the Commute Distance column, we have a 1 in the Commute Distance Order column. For entries with "1-2 Miles" in the Commute Distance column, we have a 2 in the Commute Distance Order column, and so on. This is done using nested IF statements. Then, in PowerBI, we use the 'Sort by Column' feature, to sort the Commute Distance column by the Commute Distance Order column. By doing so, the visualisation now appears in the correct order.
-![image](https://prod-files-secure.s3.us-west-2.amazonaws.com/0cf2143b-007e-4d2f-91da-9db35b0507e0/104ea6f1-5c3d-41cb-a6e1-e4bc7debde94/image.png)
+
+One way to fix this is to return to Excel and create new columns called Commute Distance Order and Age Bracket Order, which have integer values corresponding to the order in which we want the values to appear. e.g. for entries with "0-1 Miles" in the Commute Distance column, we have a 1 in the Commute Distance Order column. For entries with "1-2 Miles" in the Commute Distance column, we have a 2 in the Commute Distance Order column, and so on. This is done using nested IF statements. Then, in PowerBI, we use the 'Sort by Column' feature, to sort the Commute Distance column by the Commute Distance Order column. By doing so, the visualisation now appears in the correct order:
+![image](https://github.com/user-attachments/assets/cdc753c5-49ae-4e5b-8273-df0d03baa06b)
+
 
 ## Points of Learning / Reflection:
 - One tip I have picked up is to create a 'working sheet' in your Excel files. In the past, I have always saved a copy of the original dataset, then created a new Excel file with my working on it. Instead of having two separate files, we can create a working sheet within the same file, so we can still keep the original dataset, as well as the modified one.
